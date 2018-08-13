@@ -43,6 +43,14 @@ app.get("/maintainance",(req,res) =>{
     });
 });
 
+app.get("/projects",(req,res) =>{
+    res.render("projects.hbs",{
+        pageTitle:"Projects page",
+        welcomeMessage:'Project page text would ho here',
+        currentYear:new Date().getFullYear()
+    });
+});
+
 
 app.get('/about',(req,res) => {
     // res.send("About page");
